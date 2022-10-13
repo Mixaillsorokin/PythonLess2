@@ -12,4 +12,4 @@ for i in range(-N, N+1):
 
 
 f.close()
-print(comp)
+print(res)
