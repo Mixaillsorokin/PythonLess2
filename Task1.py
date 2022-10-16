@@ -3,13 +3,15 @@
 # 6782 -> 23
 # 0,56 -> 11
 
-a = float(input('Введите число: '))
-if a < 0:
-    a *= (-1)
+a = input('Введите число: ')
+a= a.replace('0,','')
+a= a.replace('0.','')
+a= a.replace('-','')
+a= a.replace('.','')
+a= a.replace(',','')
 sum =0
-for i in str(a):
-    if (i != '.'):
-        sum+=int(i)
+for i in a:
+    sum+=int(i)
 print(f'{a} -> {sum}')
 
 
