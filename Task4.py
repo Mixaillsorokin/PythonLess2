@@ -2,13 +2,16 @@
 # Найдите произведение элементов на указанных позициях. Позиции хранятся в файле file.txt в одной строке одно число.
 
 N=int(input('Введите сколько должно быть элементов : '))
-res = 1
-for i in range(-N, N+1):
+res = 0
+for i in range(-N, N):
+    
     f = open('file.txt','r')
-    for line in f:
-        if line == '':
+    for l in f:
+        if l == '':
            break
-        res*=i[line]    
+        else:
+            i=l
+            res*=i[l]    
 
 
 f.close()

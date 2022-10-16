@@ -1,9 +1,9 @@
 # 5. Реализуйте алгоритм перемешивания списка.
-
-spisok1=[1,2,3,4,5,6,7,8,9]
+import random
+spisok1=[1,2,3,4,5,6]
 spisok2=[]
-for i in list(spisok1):
-    
-    spisok2.append(i)
+for i in spisok1:
+    i-=1
+    spisok2.insert(i-len(spisok1),spisok1[i])
 
 print(spisok2)
